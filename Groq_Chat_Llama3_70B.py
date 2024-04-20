@@ -4,7 +4,7 @@ import os
 
 st.title('Chat with Groq - Llama 3 70B')
 
-client = Groq(api_key=os.environ.get('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'))
+client = Groq(api_key=os.environ.get('GROQ_API_KEY'))
 
 if 'messages' not in st.session_state:
     st.session_state.messages = []
